@@ -183,6 +183,10 @@ private final class KeyboardKey: UIButton {
         layer.shadowRadius = 0
         setTitleColor(.label, for: .normal)
         tintColor = .label
+        registerForTraitChanges([UITraitUserInterfaceStyle.self, UITraitAccessibilityContrast.self]) {
+            (key: KeyboardKey, _: UITraitCollection) in
+            key.updateAppearance()
+        }
         updateAppearance()
     }
 
@@ -190,11 +194,6 @@ private final class KeyboardKey: UIButton {
 
     override var isHighlighted: Bool {
         didSet { updateAppearance() }
-    }
-
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
-        updateAppearance()
     }
 
     override func layoutSubviews() {
