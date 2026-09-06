@@ -3,3 +3,7 @@ DerivedData/
 build/
 xcuserdata/
 *.xcuserstate
+
+# Keep original recording takes locally; commit the compact final exports.
+Release/Media/Source/*.mov
+Release/Media/.work/

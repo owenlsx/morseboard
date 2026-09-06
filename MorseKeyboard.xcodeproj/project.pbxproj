@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+        000000000000000000000080 = {isa = PBXBuildFile; fileRef = 000000000000000000000081; };
 		00000000000000000000001E /* MorseApp/MorseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000014 /* MorseApp/MorseApp.swift */; };
 		00000000000000000000001F /* Shared/Morse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000016 /* Shared/Morse.swift */; };
 		000000000000000000000020 /* MorseKeyboard/KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000015 /* MorseKeyboard/KeyboardViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+        000000000000000000000081 = {isa = PBXFileReference; lastKnownFileType = folder; path = MorseApp/Tutorials; sourceTree = "<group>"; };
 		000000000000000000000014 /* MorseApp/MorseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseApp/MorseApp.swift; sourceTree = "<group>"; };
 		000000000000000000000015 /* MorseKeyboard/KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseKeyboard/KeyboardViewController.swift; sourceTree = "<group>"; };
 		000000000000000000000016 /* Shared/Morse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared/Morse.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		000000000000000000000002 = {
 			isa = PBXGroup;
 			children = (
+                000000000000000000000081,
 				000000000000000000000014 /* MorseApp/MorseApp.swift */,
 				000000000000000000000015 /* MorseKeyboard/KeyboardViewController.swift */,
 				000000000000000000000016 /* Shared/Morse.swift */,
@@ -136,7 +139,7 @@
 		};
 /* End PBXProject section */
 
-000000000000000000000072 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000070); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000000072 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000070, 000000000000000000000080); runOnlyForDeploymentPostprocessing = 0; };
 000000000000000000000075 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000073); runOnlyForDeploymentPostprocessing = 0; };
 /* Begin PBXSourcesBuildPhase section */
 		000000000000000000000028 /* Sources */ = {
