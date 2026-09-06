@@ -36,9 +36,9 @@ struct ContentView: View {
                     Text("iOS uses its own keyboard for passwords and some phone fields. Some apps disable custom keyboards.")
                 }
                 Section("Help & legal") {
-                    Link("Support", destination: URL(string: "https://owenlsx.github.io/morse-keyboard/")!)
-                    Link("Privacy Policy", destination: URL(string: "https://owenlsx.github.io/morse-keyboard/privacy/")!)
-                    Link("Source Code", destination: URL(string: "https://github.com/owenlsx/morse-keyboard")!)
+                    Link("Support", destination: URL(string: "https://owenlsx.github.io/morseboard/")!)
+                    Link("Privacy Policy", destination: URL(string: "https://owenlsx.github.io/morseboard/privacy/")!)
+                    Link("Source Code", destination: URL(string: "https://github.com/owenlsx/morseboard")!)
                 }
                 Section("Morse reference") {
                     ForEach(Morse.letters.sorted(by: { $0.value < $1.value }), id: \.value) { code, letter in
