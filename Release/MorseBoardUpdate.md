@@ -16,7 +16,7 @@ Final prompt: Create a pristine minimalist app icon. 1024x1024 square opaque pur
 
 - Fixed editing columns: Caps/Settings, Space, Delete, Enter. Gear fills the Caps slot in symbols mode. Globe is in the header.
 - Settings slides up as a child view within the keyboard extension, rather than a full-screen modal over the host app. The panel grows to 380pt portrait / 240pt landscape and scrolls. Done restores 216pt / 160pt typing height.
-- Native switches: one key and translate into letters. Dot picker chooses bullet or period. WPM slider is 5–30.
+- Layout picker selects two keys, one timed key, or an alphabet keyboard that outputs Morse. The translate toggle applies to Morse-key layouts. Dot picker chooses bullet or period. WPM slider is 5–30.
 - Settings persist in the extension's own UserDefaults.
 - Full Access is not requested or required; there is no networking code.
 - Extension privacy manifest declares UserDefaults for preferences (CA92.1) and system uptime for press timing (35F9.1).
@@ -27,7 +27,7 @@ Final prompt: Create a pristine minimalist app icon. 1024x1024 square opaque pur
 - Compare symbols/letters mode: Space, Delete and Enter must stay in place.
 - Open settings, scroll, change each control, tap Done, reopen, rotate while open.
 - Verify . versus • literal output, decoded lower/uppercase output, invalid sequence discard, Enter and deletion.
-- Verify both key layouts and all settings work without Full Access.
+- Verify all three key layouts and all settings work without Full Access.
 - Inspect smallest supported iPhone portrait and landscape; check VoiceOver navigation and settings focus.
 
 Apple references:

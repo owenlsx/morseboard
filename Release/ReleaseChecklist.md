@@ -25,7 +25,7 @@ Status: preparation started; not ready for submission. Work through this with Xc
 
 ## 3. Test the release candidate
 
-- Two-key and one-key modes, symbols/letters, WPM bounds and persistence.
+- Two-key, one-key and alphabet modes; symbols/letters, word spacing, WPM bounds and persistence.
 - Valid letters/digits, invalid sequence discarded, spaces, delete, canceled touches, switching keyboards and apps.
 - Small and large supported iPhone sizes, portrait/landscape, light/dark, larger text and VoiceOver.
 - Supported minimum OS and current OS, with physical-device testing.
@@ -61,9 +61,9 @@ Description:
 
 Type Morse code with a keyboard made for dots and dashes.
 
-Use two large keys to enter • and -, or switch to one key: tap for a dot and hold for a dash. Send the symbols themselves, or turn on letters mode to translate Morse sequences into A–Z and 0–9 as you type.
+Use two large keys to enter • and -, switch to one timed key, or type on an alphabet layout that converts every letter to Morse. Send the symbols themselves, or turn on letters mode to translate Morse sequences into A–Z and 0–9 as you type.
 
-• Two-key and single-key layouts
+• Two-key, single-key, and alphabet layouts
 • Symbols or decoded letters
 • Adjustable timing from 5 to 30 WPM
 • Space and delete keys
@@ -71,13 +71,13 @@ Use two large keys to enter • and -, or switch to one key: tap for a dot and h
 • Works without Full Access
 • No ads, accounts, or analytics
 
-Enable MorseBoard in iPhone Settings, then select it using the globe key. Adjust layout, output and timing with the keyboard's gear button. In letters mode, a pause finishes each letter; invalid sequences are discarded. Word spaces are entered manually.
+Enable MorseBoard in iPhone Settings, then select it using the globe key. Adjust layout, output and timing with the keyboard's gear button. In letters mode, a pause finishes each letter; invalid sequences are discarded. In the alphabet layout, letter keys output Morse with one-space letter gaps and the space bar completes a three-space word gap.
 
 iOS uses its own keyboard in secure fields and certain other inputs. Some apps do not allow custom keyboards.
 
 Draft review notes:
 
-This app contains a custom Morse keyboard extension. No account or Full Access permission is required. Enable it in Settings > General > Keyboard > Keyboards > Add New Keyboard > MorseBoard. Open the containing app's practice field and switch to MorseBoard using the globe key. Default output is literal • and -. Use the gear to select one-key input or letters mode and adjust WPM. In letters mode, enter ... and pause to produce S. Unsupported Morse sequences intentionally produce no output.
+This app contains a custom Morse keyboard extension. No account or Full Access permission is required. Enable it in Settings > General > Keyboard > Keyboards > Add New Keyboard > MorseBoard. Open the containing app's practice field and switch to MorseBoard using the globe key. Default output is literal • and -. Use the gear to select two-key, one-key, or alphabet input. In letters mode, enter ... and pause to produce S. Unsupported Morse sequences intentionally produce no output. In alphabet mode, tapping S inserts ••• followed by one space; its space bar inserts two additional spaces.
 
 ## Sources
 

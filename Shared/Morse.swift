@@ -11,6 +11,14 @@ enum Morse {
         "...--":"3", "....-":"4", ".....":"5", "-....":"6", "--...":"7",
         "---..":"8", "----.":"9"
     ]
+    static let codesByCharacter: [String: String] = Dictionary(
+        uniqueKeysWithValues: letters.map { ($0.value, $0.key) }
+    )
+
+    static func code(for character: String) -> String? {
+        codesByCharacter[character.uppercased()]
+    }
+
     static func unit(wpm: Double) -> TimeInterval { 1.2 / max(5, min(30, wpm)) }
     static func symbol(duration: TimeInterval, wpm: Double) -> String {
         duration >= 2 * unit(wpm: wpm) ? "-" : "."

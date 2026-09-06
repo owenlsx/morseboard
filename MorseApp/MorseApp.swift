@@ -27,8 +27,9 @@ struct ContentView: View {
                     Button("Clear practice", role: .destructive) { practice = "" }
                 }
                 Section("Make it yours") {
-                    Text("Tap the gear on the keyboard to choose two keys or one key, symbols or letters, dot style, and 5–30 WPM. Settings are saved on the keyboard.")
+                    Text("Tap the gear on the keyboard to choose two keys, one key, or an alphabet layout. You can also choose symbols or letters, dot style, and 5–30 WPM. Settings are saved on the keyboard.")
                     Text("One key: tap for a dot, hold for a dash. In letters mode, pause for three dot lengths to finish a letter. Space finishes the current letter and adds a space.")
+                    Text("Alphabet layout: tap a letter to insert its Morse code. Letters are separated by one space and words by three spaces. Delete removes the complete previous Morse group.")
                     Text("WPM controls timing, not an automatic typing speed. Start at 10 WPM while learning.")
                 }
                 Section("Private by design") {

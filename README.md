@@ -21,10 +21,11 @@ For simulator testing, select an installed iPhone simulator and press ⌘R; enab
 - Starts with two large keys that insert exactly `•` (U+2022) and `-` (ASCII hyphen). Space and delete operate on the host text field.
 - Gear opens keyboard-local settings, persisted across keyboard sessions.
 - One-key layout: press and release for a dot, hold for a dash. A dot unit is `1.2 / WPM` seconds; the dash threshold is two units. Canceled/outside touches produce no symbol.
+- Alphabet layout: QWERTY letter keys insert the corresponding Morse code followed by one space. Its space bar inserts two more spaces, producing a three-space gap between words.
 - Letters mode decodes A–Z and 0–9 after three units of silence. A held single key pauses the letter timer. Caps toggles uppercase/lowercase (uppercase by default) and appears only in letters mode. Enter commits any pending letter and inserts a newline. Unknown sequences are cleared without inserting any text.
 - Delete removes a pending Morse element first, then host text. Space commits the letter and inserts a space. Word spaces are manual.
 - At 10 WPM: dot unit = 120 ms, dash threshold = 240 ms, letter pause = 360 ms.
-- The single-key layout retains space, settings and keyboard switching for practical use. It is a mode of one installed extension, not a second item in iOS Settings.
+- All three layouts retain space, delete, enter, settings and keyboard switching. They are modes of one installed extension, not separate items in iOS Settings.
 - The companion app provides onboarding, practice and a reference. Cross-app settings synchronization is deferred; adding it requires App Groups and revisiting keyboard access configuration.
 
 ## Code tour
@@ -58,7 +59,7 @@ Before shipping, test on a physical phone:
 - One-key short/long presses produce the right symbols at 5, 10 and 30 WPM; dragging outside cancels input.
 - Letters mode produces SOS from `...`, `---`, `...` with letter pauses; deleting pending elements and changing text fields does not commit stale input.
 - Globe switches keyboards and supports the system input-mode menu.
-- Settings persist after switching apps; test portrait, landscape, light/dark appearance, and VoiceOver with the two-key layout.
+- Settings persist after switching apps; test portrait, landscape, light/dark appearance, and VoiceOver with all three layouts.
 - Secure fields use the system keyboard. Some apps prohibit custom keyboards, as allowed by iOS.
 
 This is a development MVP, not a submitted App Store release. The app icon and required-reason privacy manifest are included. Device/accessibility QA, screenshots, final store metadata, public support page and privacy policy remain release tasks. It has no networking, analytics, typing-history persistence, automatic word spacing, punctuation decoding or repeat-on-hold delete.
