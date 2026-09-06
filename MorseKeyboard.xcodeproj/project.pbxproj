@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00000000000000000000001E /* MorseApp/MorseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000014 /* MorseApp/MorseApp.swift */; };
+		00000000000000000000001F /* Shared/Morse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000016 /* Shared/Morse.swift */; };
+		000000000000000000000020 /* MorseKeyboard/KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000015 /* MorseKeyboard/KeyboardViewController.swift */; };
+		000000000000000000000021 /* Shared/Morse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000016 /* Shared/Morse.swift */; };
+		000000000000000000000022 /* MorseExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 000000000000000000000018 /* MorseExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00000000000000000000002B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00000000000000000000000B;
+			remoteInfo = MorseExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00000000000000000000002A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				000000000000000000000022 /* MorseExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000014 /* MorseApp/MorseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseApp/MorseApp.swift; sourceTree = "<group>"; };
+		000000000000000000000015 /* MorseKeyboard/KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseKeyboard/KeyboardViewController.swift; sourceTree = "<group>"; };
+		000000000000000000000016 /* Shared/Morse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared/Morse.swift; sourceTree = "<group>"; };
+		000000000000000000000017 /* MorseKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = MorseKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000018 /* MorseExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; path = MorseExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000014 /* MorseApp/MorseApp.swift */,
+				000000000000000000000015 /* MorseKeyboard/KeyboardViewController.swift */,
+				000000000000000000000016 /* Shared/Morse.swift */,
+				000000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000017 /* MorseKeyboard.app */,
+				000000000000000000000018 /* MorseExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00000000000000000000000A /* MorseKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000033 /* Build configuration list for PBXNativeTarget "MorseKeyboard" */;
+			buildPhases = (
+				000000000000000000000028 /* Sources */,
+				00000000000000000000002A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00000000000000000000002C /* PBXTargetDependency */,
+			);
+			name = MorseKeyboard;
+			productName = MorseKeyboard;
+			productReference = 000000000000000000000017 /* MorseKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00000000000000000000000B /* MorseExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000034 /* Build configuration list for PBXNativeTarget "MorseExtension" */;
+			buildPhases = (
+				000000000000000000000029 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MorseExtension;
+			productName = MorseExtension;
+			productReference = 000000000000000000000018 /* MorseExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 2630;
+			};
+			buildConfigurationList = 000000000000000000000032 /* Build configuration list for PBXProject "MorseKeyboard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000002;
+			productRefGroup = 000000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00000000000000000000000A /* MorseKeyboard */,
+				00000000000000000000000B /* MorseExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00000000000000000000001E /* MorseApp/MorseApp.swift in Sources */,
+				00000000000000000000001F /* Shared/Morse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000020 /* MorseKeyboard/KeyboardViewController.swift in Sources */,
+				000000000000000000000021 /* Shared/Morse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00000000000000000000002C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00000000000000000000000B /* MorseExtension */;
+			targetProxy = 00000000000000000000002B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00000000000000000000003C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		00000000000000000000003D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		00000000000000000000003E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = NJP92FU2KC;
+				INFOPLIST_FILE = MorseApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.owen.morsekeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00000000000000000000003F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NJP92FU2KC;
+				INFOPLIST_FILE = MorseApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.owen.morsekeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		000000000000000000000040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = NJP92FU2KC;
+				INFOPLIST_FILE = MorseKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.owen.morsekeyboard.keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000000000000000000000041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NJP92FU2KC;
+				INFOPLIST_FILE = MorseKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.owen.morsekeyboard.keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000032 /* Build configuration list for PBXProject "MorseKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000003C /* Debug */,
+				00000000000000000000003D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000033 /* Build configuration list for PBXNativeTarget "MorseKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000003E /* Debug */,
+				00000000000000000000003F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000034 /* Build configuration list for PBXNativeTarget "MorseExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000040 /* Debug */,
+				000000000000000000000041 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}
