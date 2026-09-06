@@ -18,7 +18,7 @@ Status: preparation started; not ready for submission. Work through this with Xc
 - Implemented: orange-on-black dot/dash app icon, compiled asset catalog verified. Check its appearance on-device.
 - Replace deprecated appearance callback (implemented; verify build).
 - Implemented and bundle-verified: privacy manifest for UserDefaults (CA92.1) and systemUptime (35F9.1).
-- Add privacy policy and support information to the app and publish working public URLs.
+- Implemented: support and privacy pages in `docs/`, with links in the app. Publish via GitHub Pages and verify the public URLs.
 - Review copy for accurate statements about storage, keyboard limitations, WPM and unsupported Morse sequences.
 - Check version/build numbers match across app and extension. Initial version 1.0, build 1; increase build number for subsequent uploads.
 - Archive the app scheme in Xcode and validate the distribution archive; recheck the signed-binary stripping warning there.
