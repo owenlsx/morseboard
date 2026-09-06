@@ -12,6 +12,8 @@
 		000000000000000000000020 /* MorseKeyboard/KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000015 /* MorseKeyboard/KeyboardViewController.swift */; };
 		000000000000000000000021 /* Shared/Morse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000016 /* Shared/Morse.swift */; };
 		000000000000000000000022 /* MorseExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 000000000000000000000018 /* MorseExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+000000000000000000000070 = {isa = PBXBuildFile; fileRef = 000000000000000000000071; };
+000000000000000000000073 = {isa = PBXBuildFile; fileRef = 000000000000000000000074; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		000000000000000000000016 /* Shared/Morse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared/Morse.swift; sourceTree = "<group>"; };
 		000000000000000000000017 /* MorseKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = MorseKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000000000000000000000018 /* MorseExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; path = MorseExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+000000000000000000000071 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MorseApp/Assets.xcassets; sourceTree = "<group>"; };
+000000000000000000000074 = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MorseKeyboard/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -54,6 +58,8 @@
 				000000000000000000000015 /* MorseKeyboard/KeyboardViewController.swift */,
 				000000000000000000000016 /* Shared/Morse.swift */,
 				000000000000000000000003 /* Products */,
+000000000000000000000074,
+000000000000000000000071,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +80,7 @@
 			buildConfigurationList = 000000000000000000000033 /* Build configuration list for PBXNativeTarget "MorseKeyboard" */;
 			buildPhases = (
 				000000000000000000000028 /* Sources */,
+000000000000000000000072,
 				00000000000000000000002A /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -91,6 +98,7 @@
 			buildConfigurationList = 000000000000000000000034 /* Build configuration list for PBXNativeTarget "MorseExtension" */;
 			buildPhases = (
 				000000000000000000000029 /* Sources */,
+000000000000000000000075,
 			);
 			buildRules = (
 			);
@@ -128,6 +136,8 @@
 		};
 /* End PBXProject section */
 
+000000000000000000000072 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000070); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000000075 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000073); runOnlyForDeploymentPostprocessing = 0; };
 /* Begin PBXSourcesBuildPhase section */
 		000000000000000000000028 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -190,6 +200,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = NJP92FU2KC;
 				INFOPLIST_FILE = MorseApp/Info.plist;
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -199,9 +210,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.owen.morsekeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -213,6 +228,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = NJP92FU2KC;
 				INFOPLIST_FILE = MorseApp/Info.plist;
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -222,9 +238,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.owen.morsekeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -249,7 +269,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -274,7 +294,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

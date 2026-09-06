@@ -5,7 +5,7 @@ Status: preparation started; not ready for submission. Work through this with Xc
 ## 1. Account and product choices
 
 - Confirm paid Apple Developer Program membership (Personal Team is for development).
-- Decide iPhone-only versus native iPhone and iPad support before setting device families.
+- Confirmed: version 1 targets iPhone only. Both app and extension device families are set to iPhone for Debug and Release.
 - Recommended minimum: iOS 17.0 on both targets; build with installed Xcode 26.3.
 - Confirm final app name, free versus paid, countries, and public support contact.
 - Individual enrollment uses your personal legal name as seller. Review enrollment information before purchasing.
@@ -15,9 +15,9 @@ Status: preparation started; not ready for submission. Work through this with Xc
 - Keep app identifier com.owen.morsekeyboard and extension identifier com.owen.morsekeyboard.keyboard if these are available under the enrolled team.
 - Select the enrolled development team for both targets; keep automatic signing enabled.
 - Decide orientations after the supported devices are chosen. Support portrait and landscape on iPhone; all four orientations if shipping native iPad support.
-- Add and inspect an original app icon and its asset catalog membership.
+- Implemented: orange-on-black dot/dash app icon, compiled asset catalog verified. Check its appearance on-device.
 - Replace deprecated appearance callback (implemented; verify build).
-- Add required-reason privacy declarations after reviewing UserDefaults and systemUptime usage; ensure the manifest is embedded in the extension.
+- Implemented and bundle-verified: privacy manifest for UserDefaults (CA92.1) and systemUptime (35F9.1).
 - Add privacy policy and support information to the app and publish working public URLs.
 - Review copy for accurate statements about storage, keyboard limitations, WPM and unsupported Morse sequences.
 - Check version/build numbers match across app and extension. Initial version 1.0, build 1; increase build number for subsequent uploads.
@@ -51,9 +51,11 @@ Status: preparation started; not ready for submission. Work through this with Xc
 
 ## Draft listing copy (review before publishing)
 
-Name: Morse Keyboard (availability not checked)
+Name: MorseBoard (availability not checked)
 
-Subtitle: Dots, dashes, and letters
+Subtitle: Your Morse Code keyboard
+
+Tagline: Text in Morse!
 
 Description:
 
@@ -69,13 +71,13 @@ Use two large keys to enter • and -, or switch to one key: tap for a dot and h
 • Works without Full Access
 • No ads, accounts, or analytics
 
-Enable Morse Keyboard in iPhone Settings, then select it using the globe key. Adjust layout, output and timing with the keyboard's gear button. In letters mode, a pause finishes each letter; invalid sequences are discarded. Word spaces are entered manually.
+Enable MorseBoard in iPhone Settings, then select it using the globe key. Adjust layout, output and timing with the keyboard's gear button. In letters mode, a pause finishes each letter; invalid sequences are discarded. Word spaces are entered manually.
 
 iOS uses its own keyboard in secure fields and certain other inputs. Some apps do not allow custom keyboards.
 
 Draft review notes:
 
-This app contains a custom Morse keyboard extension. No account or Full Access permission is required. Enable it in Settings > General > Keyboard > Keyboards > Add New Keyboard > Morse Keyboard. Open the containing app's practice field and switch to Morse Keyboard using the globe key. Default output is literal • and -. Use the gear to select one-key input or letters mode and adjust WPM. In letters mode, enter ... and pause to produce S. Unsupported Morse sequences intentionally produce no output.
+This app contains a custom Morse keyboard extension. No account or Full Access permission is required. Enable it in Settings > General > Keyboard > Keyboards > Add New Keyboard > MorseBoard. Open the containing app's practice field and switch to MorseBoard using the globe key. Default output is literal • and -. Use the gear to select one-key input or letters mode and adjust WPM. In letters mode, enter ... and pause to produce S. Unsupported Morse sequences intentionally produce no output.
 
 ## Sources
 

@@ -1,4 +1,4 @@
-# Morse Keyboard
+# MorseBoard
 
 An iOS 17+ app and custom keyboard extension. Open **MorseKeyboard.xcodeproj**, not just the repository folder, in Xcode.
 
@@ -9,8 +9,8 @@ An iOS 17+ app and custom keyboard extension. Open **MorseKeyboard.xcodeproj**, 
 3. Enable **Automatically manage signing** and select your Apple development team. Add your Apple Account in Xcode → Settings → Accounts if necessary.
 4. Change the app bundle identifier from `com.example.morsekeyboard` to a unique identifier, such as `com.yourname.morsekeyboard`. Select **MorseExtension** and set its team too, and use the same identifier plus `.keyboard` for its bundle identifier.
 5. Connect and unlock your iPhone, trust the Mac if prompted, and enable Developer Mode on the phone if Xcode asks. Select **MorseKeyboard** as the scheme in the top toolbar and your iPhone as the destination. Press **⌘R**.
-6. On the phone, open **Settings → General → Keyboard → Keyboards → Add New Keyboard → Morse Keyboard**.
-7. Open the app's practice field or Notes. Hold the globe key and select Morse Keyboard.
+6. On the phone, open **Settings → General → Keyboard → Keyboards → Add New Keyboard → MorseBoard**.
+7. Open the app's practice field or Notes. Hold the globe key and select MorseBoard.
 
 A free Personal Team can be used for initial device testing; distribution requires Apple Developer Program enrollment. Signing and device provisioning are configured locally in Xcode. No App Groups or Full Access are needed.
 
@@ -21,7 +21,7 @@ For simulator testing, select an installed iPhone simulator and press ⌘R; enab
 - Starts with two large keys that insert exactly `•` (U+2022) and `-` (ASCII hyphen). Space and delete operate on the host text field.
 - Gear opens keyboard-local settings, persisted across keyboard sessions.
 - One-key layout: press and release for a dot, hold for a dash. A dot unit is `1.2 / WPM` seconds; the dash threshold is two units. Canceled/outside touches produce no symbol.
-- Letters mode decodes A–Z and 0–9 after three units of silence. A held single key pauses the letter timer. Output is uppercase. Unknown sequences are cleared without inserting any text.
+- Letters mode decodes A–Z and 0–9 after three units of silence. A held single key pauses the letter timer. Caps toggles uppercase/lowercase (uppercase by default) and appears only in letters mode. Enter commits any pending letter and inserts a newline. Unknown sequences are cleared without inserting any text.
 - Delete removes a pending Morse element first, then host text. Space commits the letter and inserts a space. Word spaces are manual.
 - At 10 WPM: dot unit = 120 ms, dash threshold = 240 ms, letter pause = 360 ms.
 - The single-key layout retains space, settings and keyboard switching for practical use. It is a mode of one installed extension, not a second item in iOS Settings.
@@ -61,6 +61,8 @@ Before shipping, test on a physical phone:
 - Settings persist after switching apps; test portrait, landscape, light/dark appearance, and VoiceOver with the two-key layout.
 - Secure fields use the system keyboard. Some apps prohibit custom keyboards, as allowed by iOS.
 
-This is a development MVP, not a submitted App Store release. App icon, device/accessibility QA, screenshots, store metadata and privacy disclosures remain release tasks. It has no networking, analytics, typing-history persistence, automatic word spacing, punctuation decoding or repeat-on-hold delete.
+This is a development MVP, not a submitted App Store release. The app icon and required-reason privacy manifest are included. Device/accessibility QA, screenshots, final store metadata, public support page and privacy policy remain release tasks. It has no networking, analytics, typing-history persistence, automatic word spacing, punctuation decoding or repeat-on-hold delete.
 
 Apple documentation: [Creating a custom keyboard](https://developer.apple.com/documentation/uikit/creating-a-custom-keyboard), [UIInputViewController](https://developer.apple.com/documentation/uikit/uiinputviewcontroller).
+
+See [MorseBoard update notes](Release/MorseBoardUpdate.md) for the fixed key layout, settings sheet, dot styles, icon generation prompt and device checks.
